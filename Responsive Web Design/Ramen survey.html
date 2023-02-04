@@ -1,0 +1,189 @@
+
+<!-- Layan made this woohoo! Bisse approved. --> 
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Ramen Survey</title> 
+    <link rel="stylesheet" href="styles.css" />
+  <style>
+body{
+  width:100%;
+  margin:0;
+  font-family: Lucida Console; 
+  font-size:18px;
+  background-color: #a5ff7c;
+  
+}
+h1, p{
+  text-align:center; 
+}
+
+fieldset{
+  border:none;
+  border-bottom: 3px dashed black;
+  
+}
+
+/*This is to remove the last bottom border of the last type which is submit*/
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+/*This is to make the background of text black*/
+label span{
+  background-color:black;
+  padding:7px 4px 5px 5px;
+  color: white;
+}
+
+/*This is for lineheight for the spans*/
+.lines{
+  line-height:28px;
+  display:inline;
+}
+
+/*This is a mini solution (so not solution) for the padding on the right mid sentence*/
+a{
+  padding-right:4px;
+}
+
+
+.browse{
+  font-family: Lucida Console; 
+  
+}
+textarea{
+  width:100%;
+  
+}
+form{
+  width:70vw;
+  max-width: 585px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+
+label{
+  display:block;
+  margin: 1rem 0;
+}
+
+select{
+  font-size:16px;
+  font-family: Lucida Console;
+  text-align:center;
+}
+
+input[type="submit"]{
+display:block;
+font-family:Lucida Console;
+width:100%;
+margin: 1em auto;
+height:3em;
+background-color:white;
+border-color:black;
+border-width:5px;
+min-width:300px;
+}
+
+  </style>
+  </head>
+
+  <body>
+
+<!-- TITLE AND DESCRIPTION --> 
+<h1 id="title">Ramen Survey</h1>
+<p id="description">Help us make our ramen a better experience for you!</p>
+
+<!-- Here we say this is a sruve form not sure why still --> 
+<form id="survey-form">
+
+<!-- 1/4 FIELDSET --> 
+  <fieldset>
+
+<!-- NAME --> 
+<label id="name-label" for="name" ><span>Name </label>
+<input name="name" id="name" type="text" placeholder="Noodle McBroth" required>
+
+<!-- EMAIL --> 
+<label id="email-label" for="email"><span>Email </label>
+<input name="email" id="email" type="email" placeholder="slurp@softboiledegg.com" required>
+
+<!-- NUMBER --> 
+<label id="number-label" for="number"><span class="lines">Times you ate ramen </span></label>
+<input id="number" type="number" name="number" min="1" max="1601" placeholder="666" >
+
+</fieldset>
+
+<!-- 2/4 FIELDSET --> 
+<fieldset>
+
+<!-- LEVEL Q--> 
+<label for="dropdown"><span class="lines">Choose your level
+<!-- ANSWERS --> 
+<select id="dropdown" name="ramen level">
+  <option value="">Select one</option>
+  <option value="1">Noodle Newbie</option>
+  <option value="2">Broth Babe</option>
+  <option value="3">Miso Master</option>
+  <option value="4">Shoyo Shlut</option>
+  <option value="5">Dumpling</option>
+  </select>
+  </label>
+
+<!-- WHERE Q--> 
+  <label ><span class="lines">Where do you get your ramen?</label>
+
+<!-- ANSWERSE --> 
+  <label for="experience"><input type="radio" name="ramen experience" id="experience" value="home"> I make ramen at home from scratch</label>
+  <label for="experience"><input type="radio" name="ramen experience" id="experience" value="instant"> I buy instant ramen</label>
+  <label for="experience"><input type="radio" name="ramen experience" id="experience" value="out"> I go out to eat ramen</label>
+  <label for="experience"><input type="radio" name="ramen experience" id="experience" value="parents"> My parents make me ramen</label>
+  <label for="experience"><input type="radio" name="ramen experience" id="experience" value="am"> I am ramen ~~~</label>
+
+<!-- FAV Q --> 
+  <label ><span class="lines"><a>Choose your favourite ramen </a>topping/s</label>
+
+<!-- ANSWERS --> 
+  <label for="toppings"><input type="checkbox" id="toppings" name="toppings" value="softegg"> Soft boiled egg</label>
+  <label for="toppings"><input type="checkbox" id="toppings" name="toppings" value="spam"> Spam</label>
+  <label for="toppings"><input type="checkbox" id="toppings" name="toppings" value="fishcakes"> Fish cakes</label>
+  <label for="toppings"><input type="checkbox" id="toppings" name="toppings" value="tofu"> Tofu</label>
+  <label for="toppings"><input type="checkbox" id="toppings" name="toppings" value="seaweed"> Seaweed</label>
+  <label for="toppings"><input type="checkbox" id="toppings" name="toppings" value="greenonions"> Green onions</label>
+  <label for="toppings"><input type="checkbox" id="toppings" name="toppings" value="sesameoil"> Toasted sesame seed oil</label>
+  </fieldset>
+
+<!-- 3/4 FIELDSET --> 
+  <fieldset>
+<label for="file" ><span class="lines"><a>Submit a picture of your favourite </a>instant ramen </span></label>
+
+<!-- THIS IS BUTTON idk how to change its font --> 
+<input class="browse" type="file" name="picture" id="file" required>
+    </fieldset>
+
+<!-- 4/4 FIELDSET--> 
+    <fieldset>
+  <label id="suggestions" ><span class="lines"><a>Any suggestions to improve or downgrade </a><a>our</a> ramen?
+  </label>
+
+<!-- TEXT BOX FOR ANSWER --> 
+  <textarea id="suggestions" name="suggestions" placeholder="Please add ramen facemask to the menu..."></textarea>
+   
+<!-- SUBMIT BUTTON this font changed and idk how it knows it's a button--> 
+    <input id="submit" type="submit" value="Submit" />
+    </fieldset>
+    
+<!-- END OF FIELDSETS--> 
+  </form>
+    </body>
+    </html>
+
+<!-- END OF CODE--> 
+
+
+
+
+
