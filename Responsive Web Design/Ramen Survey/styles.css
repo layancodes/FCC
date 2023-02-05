@@ -1,0 +1,80 @@
+body{
+  width:100%;
+  margin:0;
+  font-family: Lucida Console; 
+  font-size:18px;
+  background-color: #a5ff7c;
+  
+}
+h1, p{
+  text-align:center; 
+}
+
+fieldset{
+  border:none;
+  border-bottom: 3px dashed black;
+  
+}
+
+/*This is to remove the last bottom border of the last type which is submit*/
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+/*This is to make the background of text black*/
+label span{
+  background-color:black;
+  padding:7px 4px 5px 5px;
+  color: white;
+}
+
+/*This is for lineheight for the spans*/
+.lines{
+  line-height:28px;
+  display:inline;
+}
+
+/*This is a mini solution (so not solution) for the padding on the right mid sentence*/
+a{
+  padding-right:4px;
+}
+
+
+.browse{
+  font-family: Lucida Console; 
+  
+}
+textarea{
+  width:100%;
+  
+}
+form{
+  width:70vw;
+  max-width: 585px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+
+label{
+  display:block;
+  margin: 1rem 0;
+}
+
+select{
+  font-size:16px;
+  font-family: Lucida Console;
+  text-align:center;
+}
+
+input[type="submit"]{
+display:block;
+font-family:Lucida Console;
+width:100%;
+margin: 1em auto;
+height:3em;
+background-color:white;
+border-color:black;
+border-width:5px;
+min-width:300px;
+}
